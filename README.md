@@ -1,2 +1,2 @@
 # mobilepearls.github.io
-https://mobilepearls.com
+Github Pages for https://mobilepearls.com.

@@ -1,0 +1,173 @@
+html, body, ul, li, h1, div, p {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: verdana;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+html {
+    	background-attachment:fixed;
+	background:  #ccd9c8 /*url(/images/android_logo.png) -273px 10px no-repeat*/;
+}
+
+body {
+	padding: 0em;
+	min-width: 320px;
+   	font-family: Arial, Helvetica;
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body.labs {
+	max-width: 1024px;
+}
+
+h1 {
+    color:#A4C639;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+	background: white; /*#fffafa;*/
+	border-left: 1px solid #708090;
+	border-right: 1px solid #708090;
+	border-top: 1px solid #708090;
+	padding: 12px 24px 0 24px;
+}	
+@media only screen and (min-device-width: 1025px) {
+	.header { margin-top: 1em; }	
+	#footer {
+		margin-bottom: 1em;
+		border-bottom-right-radius: 1em;
+		border-bottom-left-radius: 1em;
+	}
+}
+
+.post {
+	background: white;
+	/*
+	border-top: 1px solid rgb(230,230,230);
+	border-bottom: 1px solid rgb(190,190,190);
+	*/
+	border-left: 1px solid #708090;
+	border-right: 1px solid #708090;
+	padding: 2em;
+}
+
+/*
+.post * { position: fixed; margin-left: 100px; }
+.post img { float: left; margin-left: 0px; }
+*/
+
+.intro {
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+.install {
+	white-space: nowrap;
+	font-family: arial;
+	font-weight: bold;
+
+	border: 1px solid #A4C639;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+
+	/*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);*/
+
+	background-image: -webkit-gradient(linear,
+		left top, left bottom,
+		color-stop(0.0, rgba(255, 255, 255, 0.8)),
+		color-stop(0.01, rgba(255, 255, 255, 0.6)),
+		color-stop(0.4, rgba(255, 255, 255, 0.3)),
+		color-stop(0.4, rgba(255, 255, 255, 0.2)),
+		color-stop(1.0, rgba(255, 255, 255, 0.0))
+	);
+
+	background-image: -moz-linear-gradient(top,
+		rgba(255, 255, 255, 1.0) 0%,
+		rgba(255, 255, 255, 0.6) 1px,
+		rgba(255, 255, 255, 0.3) 40%,
+		rgba(255, 255, 255, 0.2) 40%,
+		rgba(255, 255, 255, 0.0) 100%
+	);
+
+	background-color: #A4C639;
+	color: #fff;
+
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+.install-container { text-align: right; }
+
+a {
+    /*color: #A4B639;*/
+    color: #A4B639;
+}
+
+.post p, form {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#footer {
+	border-top: 1px solid rgb(120,120,120);
+	border-left: 1px solid #708090;
+	border-right: 1px solid #708090;
+	text-align: center; 
+	background: #505050;
+	padding:24px;
+	color:#ccc;
+	font-size:12px; 
+}
+
+.icon {
+    float: left;
+    margin-bottom: 3em;
+    margin-right: 1em;
+}
+
+ul {
+	list-style-type: none;
+	margin-bottom: 2em;
+}
+li {
+	margin-bottom: 1em;
+}
+
+#breadcrumbs a:nth-child(n+2) { margin-left: 0.5em; }
+#breadcrumbs a:nth-child(n+2):before { content: '» '; }
+#breadcrumbs span { margin-left: 0.5em; }
+#breadcrumbs span:before { content: '» '; }
+#breadcrumbs { margin-bottom: 1em; }
+#top { text-align: right; margin: 0; padding: 0; float: right; }
+
+table.basic { border-spacing: 0px; border: 1px solid silver; }
+table { margin-left: auto; margin-right: auto; border-spacing: 0; border: 1px solid silver; margin-bottom: 1em; }
+thead td { font-weight: bold; background: #CCD9C8; color: black; border-bottom: 1px solid silver; }
+td { padding: 0.6em; vertical-align: top; }
+form td { vertical-align: middle; }
+input[type="text"], input[type="password"] { border-color: #DDD; border-style: solid; }
+input.error { border-color: red; }
+p.error { color: red; }
+.progress { color: blue; }
